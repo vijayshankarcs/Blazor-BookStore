@@ -1,0 +1,38 @@
+2021-02-16 13:43:41.5764 INFO Attempting Get All Authors
+2021-02-16 13:43:44.4015 INFO Successfully get all Authors
+2021-02-16 13:44:21.2291 INFO Attempting Get All Authors
+2021-02-16 13:44:21.2873 INFO Successfully get all Authors
+2021-02-16 21:42:47.2963 INFO Attempted to get auther with id:1
+2021-02-16 21:42:50.6074 WARN Auther with id: 1 was not found
+2021-02-16 21:50:22.7088 INFO Attempted to get auther with id:1
+2021-02-16 21:50:24.7821 WARN Auther with id: 1 was not found
+2021-02-16 22:22:56.5534 WARN Author submission attempted
+2021-02-16 22:23:33.1118 ERROR Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> Author
+System.Object -> BookStore_API.Data.Author - 
+2021-02-16 22:32:19.9525 WARN Author submission attempted
+2021-02-16 22:32:25.9052 INFO Author created
+2021-02-16 22:34:04.6556 WARN Author submission attempted
+2021-02-16 22:34:04.7392 INFO Author created
+2021-02-16 22:35:38.5864 INFO Attempted to get auther with id:1
+2021-02-16 22:35:38.9765 ERROR Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> IList`1
+System.Object -> System.Collections.Generic.IList`1[[BookStore_API.DTOs.AuthorDTO, BookStore-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - 
+2021-02-16 22:35:43.1349 INFO Attempted to get auther with id:1
+2021-02-16 22:35:43.2308 ERROR Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> IList`1
+System.Object -> System.Collections.Generic.IList`1[[BookStore_API.DTOs.AuthorDTO, BookStore-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - 
+2021-02-16 22:35:47.4659 INFO Attempting Get All Authors
+2021-02-16 22:35:47.5540 INFO Successfully get all Authors
+2021-02-16 22:36:00.3128 INFO Attempted to get auther with id:1
+2021-02-16 22:36:00.4332 ERROR Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> IList`1
+System.Object -> System.Collections.Generic.IList`1[[BookStore_API.DTOs.AuthorDTO, BookStore-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - 

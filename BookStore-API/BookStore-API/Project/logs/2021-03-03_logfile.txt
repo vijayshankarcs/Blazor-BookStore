@@ -1,0 +1,57 @@
+2021-03-03 07:07:05.0677 INFO Users- Login : Login attempt from user admin
+2021-03-03 07:07:05.4204 INFO Users- Login:admin Successfully Authenticate
+2021-03-03 07:13:54.7528 INFO Attempting Get All Authors
+2021-03-03 07:13:55.0173 INFO Successfully get all Authors
+2021-03-03 07:14:09.3068 INFO Attempted to get auther with id:1
+2021-03-03 07:14:09.5516 ERROR Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> IList`1
+System.Object -> System.Collections.Generic.IList`1[[BookStore_API.DTOs.AuthorDTO, BookStore-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - 
+2021-03-03 07:14:17.9388 INFO Attempted to get auther with id:2
+2021-03-03 07:14:18.0360 ERROR Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> IList`1
+System.Object -> System.Collections.Generic.IList`1[[BookStore_API.DTOs.AuthorDTO, BookStore-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - 
+2021-03-03 07:15:15.5388 INFO Attempting Get All Authors
+2021-03-03 07:15:15.5665 INFO Successfully get all Authors
+2021-03-03 07:15:21.3144 INFO Attempted to get auther with id:1
+2021-03-03 07:15:21.4424 ERROR Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> IList`1
+System.Object -> System.Collections.Generic.IList`1[[BookStore_API.DTOs.AuthorDTO, BookStore-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - 
+2021-03-03 07:15:57.3037 INFO Attempted to get auther with id:1
+2021-03-03 07:18:04.6320 ERROR Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> IList`1
+System.Object -> System.Collections.Generic.IList`1[[BookStore_API.DTOs.AuthorDTO, BookStore-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - 
+2021-03-03 07:18:15.7872 INFO Attempted to get auther with id:1
+2021-03-03 07:20:19.6971 INFO Attempted to get auther with id:1
+2021-03-03 07:20:19.8891 INFO Successfully got auther with id:1
+2021-03-03 07:20:25.5771 INFO Attempted to get auther with id:2
+2021-03-03 07:20:25.6127 INFO Successfully got auther with id:2
+2021-03-03 07:21:21.5592 INFO Users- Login : Login attempt from user customre1
+2021-03-03 07:21:21.5863 INFO Users- Login:customre1 Not Authenticated
+2021-03-03 07:21:30.4976 INFO Users- Login : Login attempt from user customer1
+2021-03-03 07:21:30.6890 INFO Users- Login:customer1 Successfully Authenticate
+2021-03-03 07:23:23.2640 INFO Users- Login : Login attempt from user admin
+2021-03-03 07:23:23.3092 INFO Users- Login:admin Successfully Authenticate
+2021-03-03 07:31:55.6652 INFO Users- Login : Login attempt from user admin
+2021-03-03 07:31:56.0690 INFO Users- Login:admin Successfully Authenticate
+2021-03-03 07:37:30.3841 INFO Users- Login : Login attempt from user admin
+2021-03-03 07:37:30.6908 INFO Users- Login:admin Successfully Authenticate
+2021-03-03 07:52:18.2642 INFO Users- Login : Login attempt from user customrer1
+2021-03-03 07:52:18.3906 INFO Users- Login:customrer1 Not Authenticated
+2021-03-03 07:52:24.6886 INFO Users- Login : Login attempt from user customer1
+2021-03-03 07:52:24.9122 INFO Users- Login:customer1 Successfully Authenticate
+2021-03-03 07:53:25.7344 INFO Users- Login : Login attempt from user customer1
+2021-03-03 07:53:25.7817 INFO Users- Login:customer1 Successfully Authenticate
+2021-03-03 07:57:58.4509 INFO Users- Login : Login attempt from user customer1
+2021-03-03 07:57:59.0536 INFO Users- Login:customer1 Successfully Authenticate
+2021-03-03 08:13:48.7884 INFO Users- Login : Login attempt from user customer1
+2021-03-03 08:13:49.1202 INFO Users- Login:customer1 Successfully Authenticate
+2021-03-03 08:13:59.6734 INFO Users- Login : Login attempt from user admin
+2021-03-03 08:13:59.7152 INFO Users- Login:admin Successfully Authenticate
