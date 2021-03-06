@@ -35,11 +35,44 @@ namespace BookStore_API.Controllers
             _logger = logger;
             _config = config;
         }
+        [Route("register")]
+        [AllowAnonymous]
+        [HttpPost]
+        public async Task<IActionResult> Register([FromBody] UserDTO userDTO)
+        {
+            var location = GetCollerActionNames();
+            try
+            {
+                var username = userDTO.EmailAddress;
+                var password = userDTO.Password;
+                _logger.LogInfo($"{location} : Registration attempt for {username}");
+
+                var user = new IdentityUser { Email = username, UserName = username };
+                var result = await _userManager.CreateAsync(user, password);
+                if (!result.Succeeded)
+                {
+                    foreach (var error in result.Errors)
+                    {
+                        _logger.LogError($"{location}: {error.Code} {error.Description} ");
+                    }
+                    _logger.LogError($"{location}: {username} user registrtion attempt failed");
+                }
+                return Ok(new { result.Succeeded });
+            }
+            catch (Exception ex)
+            {
+                return InternalError($"{location}:{ex.Message} - {ex.InnerException}");
+            }
+
+        }
+
         /// <summary>
         /// user login endpoint
         /// </summary>
         /// <param name="userDTO"></param>
         /// <returns></returns>
+        /// 
+        [Route("login")]
         [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Login([FromBody] UserDTO userDTO)
@@ -47,16 +80,16 @@ namespace BookStore_API.Controllers
             var location = GetCollerActionNames();
             try
             {
-                _logger.LogInfo($"{location} : Login attempt from user {userDTO.Username}");
-                var result = await _signInManager.PasswordSignInAsync(userDTO.Username, userDTO.Password, false, false);
+                _logger.LogInfo($"{location} : Login attempt from user {userDTO.EmailAddress}");
+                var result = await _signInManager.PasswordSignInAsync(userDTO.EmailAddress, userDTO.Password, false, false);
                 if (result.Succeeded)
                 {
-                    _logger.LogInfo($"{location}:{userDTO.Username} Successfully Authenticate");
-                    var user = await _userManager.FindByNameAsync(userDTO.Username);
+                    _logger.LogInfo($"{location}:{userDTO.EmailAddress} Successfully Authenticate");
+                    var user = await _userManager.FindByNameAsync(userDTO.EmailAddress);
                     var tokenString = await GenerateJSONWebToken(user);
                     return Ok(new { token = tokenString });
                 }
-                _logger.LogInfo($"{location}:{userDTO.Username} Not Authenticated");
+                _logger.LogInfo($"{location}:{userDTO.EmailAddress} Not Authenticated");
                 return Unauthorized(userDTO);
             }
             catch (Exception ex)
@@ -76,8 +109,8 @@ namespace BookStore_API.Controllers
 
             };
             var roles = await _userManager.GetRolesAsync(user);
-            claims.AddRange(roles.Select(r => new Claim(ClaimsIdentity.DefaultNameClaimType, r)));
-           
+            claims.AddRange(roles.Select(r => new Claim(ClaimsIdentity.DefaultRoleClaimType, r)));
+
             var token = new JwtSecurityToken(_config["JWT:Issuer"]
                , _config["Jwt:Issuer"],
                claims,
@@ -97,7 +130,7 @@ namespace BookStore_API.Controllers
         private ObjectResult InternalError(string message)
         {
             _logger.LogError(message);
-            return StatusCode(500, "Something went wrong");
+            return StatusCode(500, "Something went wrong.");
         }
     }
 }

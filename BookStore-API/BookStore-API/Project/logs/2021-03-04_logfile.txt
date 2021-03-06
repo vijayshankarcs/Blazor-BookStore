@@ -1,0 +1,7 @@
+2021-03-04 21:11:55.5810 INFO Users- Login : Login attempt from user admin@bookstore.com
+2021-03-04 21:11:59.7065 INFO Users- Login:admin@bookstore.com Not Authenticated
+2021-03-04 21:13:00.7343 INFO Users- Login : Login attempt from user admin@bookstore.com
+2021-03-04 21:15:59.8372 INFO Users- Login : Login attempt from user admin
+2021-03-04 21:16:03.3921 INFO Users- Login:admin Successfully Authenticate
+2021-03-04 21:16:25.1942 WARN Author submission attempted
+2021-03-04 21:16:25.5364 INFO Author created

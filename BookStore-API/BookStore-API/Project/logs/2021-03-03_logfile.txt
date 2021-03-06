@@ -55,3 +55,5 @@ System.Object -> System.Collections.Generic.IList`1[[BookStore_API.DTOs.AuthorDT
 2021-03-03 08:13:49.1202 INFO Users- Login:customer1 Successfully Authenticate
 2021-03-03 08:13:59.6734 INFO Users- Login : Login attempt from user admin
 2021-03-03 08:13:59.7152 INFO Users- Login:admin Successfully Authenticate
+2021-03-03 08:36:43.9820 INFO Users- Login : Login attempt from user admin
+2021-03-03 08:36:44.6065 INFO Users- Login:admin Successfully Authenticate
